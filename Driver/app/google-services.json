@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "404879806612",
+    "project_id": "dmucabapp",
+    "storage_bucket": "dmucabapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404879806612:android:bb1ee714df0061c6002481",
+        "android_client_info": {
+          "package_name": "com.example.mydmucabapp_driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYayMzTO5ZUeINagzzecL4VxsnIWh28s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404879806612:android:bb38528e4c5d7722002481",
+        "android_client_info": {
+          "package_name": "com.example.mydmucabapp_passenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYayMzTO5ZUeINagzzecL4VxsnIWh28s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

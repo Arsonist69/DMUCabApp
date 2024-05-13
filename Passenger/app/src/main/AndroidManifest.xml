@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App.TransparentTopBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.TripDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+        <activity
+            android:name=".controller.ScheduleTripActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+        <activity
+            android:name=".controller.RideActive"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".controller.DashBoardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+        <activity
+            android:name=".controller.EmailVerification"
+            android:exported="false" />
+        <activity
+            android:name=".controller.LoginRegister"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+        <activity
+            android:name=".controller.RegisterationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar" />
+        <activity
+            android:name=".controller.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MYDMUCabAppPassenger.NoActionBar"
+            />
+        <activity
+            android:name=".controller.HomePageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".utils.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

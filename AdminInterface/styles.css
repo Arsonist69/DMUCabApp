@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.driver-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.driver-images img {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.driver-info {
+    margin-bottom: 10px;
+}
+
+.driver-card button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.driver-card button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect on hover */
+}
+
+.driver-card button:disabled {
+    background-color: #ccc; /* Grey background for disabled state */
+    color: #666; /* Dark grey text for disabled state */
+    cursor: not-allowed;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item>
+        <shape android:shape="line">
+            <solid android:color="#F0F0F0"/> <!-- Light grey color -->
+            <corners android:radius="16dp"/> <!-- Rounded corners -->
+        </shape>
+    </item>
+
+    <!-- Shadow effect -->
+    <item android:bottom="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#D0D0D0"/> <!-- Shadow color, darker grey -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+    <!-- Main container -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F0F0F0"/> <!-- Light grey color, same as background -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</layer-list>

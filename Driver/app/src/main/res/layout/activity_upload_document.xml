@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".controller.UploadDocumentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        >
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/tvVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alike_angular"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDrivingLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DVLA Electric Counter-part Check:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextLicenseCheck"
+            android:layout_width="1.55in"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_textbox"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btnSubmitLicenseCode"
+            android:layout_height="wrap_content"
+            android:text= "Submit"
+            android:layout_marginStart="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvVehicleDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="10dp"/>
+
+fi
+    <LinearLayout
+        android:id="@+id/vehicleDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editTextVehicleRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Registration No"
+            android:background="@drawable/custom_textbox"/>
+
+        <EditText
+            android:id="@+id/editTextVehicleModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Model"
+            android:background="@drawable/custom_textbox"/>
+
+        <EditText
+            android:id="@+id/editTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Color"
+            android:background="@drawable/custom_textbox"/>
+
+        <Button
+            android:id="@+id/btnSubmitVRN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvUploadProofOfInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certificate of Motor Insurance"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <Button
+        android:id="@+id/btnUploadInsurance"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/tvUploadIdDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Document (Front Page)"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <Button
+        android:id="@+id/btnUploadId"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="Upload" />
+
+
+
+
+</LinearLayout>

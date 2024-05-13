@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main_dashboard"
+            android:icon="@drawable/ic_user_details"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_user_details"
+            android:icon="@drawable/ic_user_details"
+            android:title="@string/details" />
+        <item
+            android:id="@+id/nav_scheduled_trips"
+            android:icon="@drawable/ic_user_details"
+            android:title="@string/scheduled_trips" />
+        <item
+            android:id="@+id/nav_rides_history"
+            android:icon="@drawable/ic_rides_history"
+            android:title="@string/rides_history" />
+        <item
+            android:id="@+id/nav_faqs"
+            android:icon="@drawable/ic_faqs"
+            android:title="@string/faqs" />
+    </group>
+</menu>

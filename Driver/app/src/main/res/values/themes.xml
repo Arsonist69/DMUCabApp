@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme using Material Components -->
+    <style name="Base.Theme.MYDMUCabAppPassenger" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+    <style name="Theme.MYDMUCabAppPassenger" parent="Base.Theme.MYDMUCabAppPassenger">
+        <item name="colorPrimary">@color/DarkRed</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- false for light text/icons on dark status bar -->
+    </style>
+
+    <style name="Theme.MYDMUCabAppPassenger.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/DarkRed</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="Base.Theme.MYDMUCabAppPassenger.Black" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- false for light text/icons on dark status bar -->
+    </style>
+
+    <style name="Theme.MYDMUCabAppPassenger.Black" parent="Base.Theme.MYDMUCabAppPassenger.Black">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- true for dark text/icons on light status bar if needed -->
+    </style>
+
+    <style name="Theme.MYDMUCabAppPassenger.Black.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- AppBar overlay for toolbar customization -->
+    <style name="Theme.MYDMUCabAppPassenger.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Popup overlay for menu and other popup customizations -->
+    <style name="Theme.MYDMUCabAppPassenger.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

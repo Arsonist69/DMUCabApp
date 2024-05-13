@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape: Fills the entire area with smokey white color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5"/> <!-- Smokey white color -->
+            <corners android:radius="16dp"/> <!-- Rounded corners with specific radius -->
+        </shape>
+    </item>
+
+    <item android:right="1dp" android:left="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="3dp"
+                android:color="@color/gray"
+                />
+            <corners android:radius="16dp"/> <!-- Rounded corners with specific radius -->
+        </shape>
+    </item>
+</layer-list>
